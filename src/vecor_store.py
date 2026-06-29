@@ -1,5 +1,5 @@
 from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain_community.vecorstores import FAISS
+from langchain_community.vectorstores import FAISS
 from src.embeddings import huggingface_embeddings
 def vector_db(text):
     text_splitter=RecursiveCharacterTextSplitter(chunk_size=500,chunk_overlap=50)

@@ -1,10 +1,50 @@
-from langchain.agents import initialize_agent
-from langchain.agents import AgentType
+from src.tools import wiki, arxiv_tool, calculator
+from src.llm import get_llm
 
-from src.tools import (wiki,arxiv_tool,calculator)
-from src.llm import llm 
+llm = get_llm()
 
-def agent():
-    llm=llm()
-    tools=[wiki,arxiv_tool,calculator]
-    return initialize_agent(tools,llm,agent=AgentType.ZERO_SHOT_REACT_DESCRIPTION,verbose=True)
+def ask_agent(question):
+
+    q = question.lower()
+
+    try:
+
+        if any(word in q for word in [
+            "research",
+            "paper",
+            "arxiv",
+            "publication"
+        ]):
+
+            return arxiv_tool.run(question)
+
+        elif any(word in q for word in [
+            "wikipedia",
+            "who is",
+            "what is",
+            "history"
+        ]):
+
+            return wiki.run(question)
+
+        elif any(op in q for op in [
+            "+",
+            "-",
+            "*",
+            "/"
+        ]):
+
+            return calculator.invoke(question)
+
+        else:
+
+            response = llm.invoke(question)
+
+            if hasattr(response, "content"):
+                return response.content
+
+            return str(response)
+
+    except Exception as e:
+
+        return f"Error: {str(e)}"

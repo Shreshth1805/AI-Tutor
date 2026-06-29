@@ -1,8 +1,8 @@
 from langchain.chains import ConversationalRetrievalChain
-from src.llm import llm
+from src.llm import get_llm
 from src.memory import memory
 def tutor_chain(retriever):
-    llm=llm()
+    llm=get_llm()
     chain=ConversationalRetrievalChain(
         llm=llm,
         retriever=retriever,

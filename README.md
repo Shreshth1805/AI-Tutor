@@ -1,4 +1,4 @@
-# 🎓 EduSmart AI Tutor
+# EduSmart AI Tutor
 
 An AI-powered educational assistant built using LangChain, Hugging Face Embeddings, Groq LLMs, FAISS, and Streamlit.
 
@@ -6,9 +6,9 @@ EduSmart AI Tutor helps students learn more effectively through document-based q
 
 ---
 
-# 🚀 Features
+# Features
 
-## 📚 Document-Based Learning (RAG)
+## Document-Based Learning (RAG)
 
 Students can upload:
 
@@ -27,7 +27,7 @@ The system:
 
 ---
 
-## 🤖 General AI Tutor
+## General AI Tutor
 
 Students can ask general questions such as:
 
@@ -40,7 +40,7 @@ The tutor provides conversational and educational responses.
 
 ---
 
-## 🌐 Wikipedia Tool
+## Wikipedia Tool
 
 The tutor can retrieve information from Wikipedia for factual and historical topics.
 
@@ -52,7 +52,7 @@ Examples:
 
 ---
 
-## 📄 ArXiv Research Tool
+## ArXiv Research Tool
 
 The tutor can search research papers from ArXiv.
 
@@ -64,7 +64,7 @@ Examples:
 
 ---
 
-## 🧮 Calculator Tool
+## Calculator Tool
 
 Supports mathematical calculations.
 
@@ -76,7 +76,7 @@ Examples:
 
 ---
 
-## 📝 Learning Support Features
+## Learning Support Features
 
 * Document Summarization
 * Quiz Generation
@@ -86,7 +86,7 @@ Examples:
 
 ---
 
-# 🏗️ System Architecture
+# System Architecture
 
 User
 
@@ -118,7 +118,7 @@ Response
 
 ---
 
-# 🛠️ Tech Stack
+# Tech Stack
 
 ## Frontend
 
@@ -155,7 +155,7 @@ Response
 
 ---
 
-# 📂 Project Structure
+# Project Structure
 
 ```text
 EduSmart-AI-Tutor/
@@ -187,12 +187,12 @@ EduSmart-AI-Tutor/
 
 ---
 
-# ⚙️ Installation
+# Installation
 
 ## Clone Repository
 
 ```bash
-git clone <repository_url>
+git clone <https://github.com/Shreshth1805/AI-Tutor>
 
 cd EduSmart-AI-Tutor
 ```
@@ -225,35 +225,27 @@ pip install -r requirements.txt
 
 ---
 
-# 📦 Required Packages
+# Required Packages
 
 ```text
 streamlit
-
 langchain==0.3.25
 langchain-core==0.3.59
 langchain-community==0.3.24
-
 langchain-groq
 langchain-openai
 langchain-huggingface
-
 langgraph
-
 faiss-cpu
-
 sentence-transformers
-
 pypdf
-
 python-docx
-
 python-dotenv
 ```
 
 ---
 
-# 🔑 Environment Variables
+# Environment Variables
 
 Create a `.env` file:
 
@@ -263,7 +255,7 @@ GROQ_API_KEY=your_groq_api_key
 
 ---
 
-# ▶️ Running the Application
+# Running the Application
 
 ```bash
 streamlit run app.py
@@ -277,7 +269,7 @@ http://localhost:8501
 
 ---
 
-# 🧪 Example Queries
+# Example Queries
 
 ## Document Mode
 
@@ -309,7 +301,7 @@ http://localhost:8501
 
 ---
 
-# 🔒 Privacy and Safety Considerations
+# Privacy and Safety Considerations
 
 This project is designed with educational use in mind.
 
@@ -324,7 +316,7 @@ Recommendations for production deployment:
 
 ---
 
-# 📈 Future Enhancements
+# Future Enhancements
 
 * Voice-Based Tutor
 * Multi-Language Support
@@ -339,7 +331,7 @@ Recommendations for production deployment:
 
 ---
 
-# 🎯 Learning Objectives
+# Learning Objectives
 
 This project demonstrates:
 
@@ -353,8 +345,3 @@ This project demonstrates:
 * Agent-Based Workflows
 * Streamlit Deployment
 
----
-
-# 👨‍💻 Author
-
-Built as a Generative AI Engineering project focused on creating intelligent, personalized, and scalable educational assistants using modern LLM and RAG architectures.

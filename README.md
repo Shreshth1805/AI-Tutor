@@ -269,6 +269,10 @@ http://localhost:8501
 
 ---
 
+# Project Preview
+
+![Project Preview]()
+
 # Example Queries
 
 ## Document Mode

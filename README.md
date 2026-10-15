@@ -271,7 +271,7 @@ http://localhost:8501
 
 # Project Preview
 
-![Project Preview]()
+![Project Preview](images\diagram (1).png)
 
 # Example Queries
 

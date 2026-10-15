@@ -268,10 +268,16 @@ http://localhost:8501
 ```
 
 ---
+## Project Preview
 
-# Project Preview
+<p align="center">
+  <img
+    src="./images/diagram%20(1).png"
+    alt="EduSmart AI Tutor Activity Diagram"
+    width="800"
+  />
+</p>
 
-![Project Preview](images\diagram (1).png)
 
 # Example Queries
 
